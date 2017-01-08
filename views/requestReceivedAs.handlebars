@@ -1,0 +1,16 @@
+<h1>{{requestType}} Request Received</h1>
+
+<p>All parameter names and values which were sent in the URL query string, if any, will be listed below here.</p>
+<ul>
+  {{#each passedQueryData}}
+    <li>{{this.name}}: {{this.value}}
+  {{/each}}
+</ul>
+
+<p>Request Body params/values, if any, will be listed below here.</p>
+
+<ul>
+  {{#each passedBodyData}}
+    <li>{{this.name}}: {{this.value}}
+  {{/each}}
+</ul>
